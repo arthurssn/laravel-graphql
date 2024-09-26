@@ -78,7 +78,9 @@ return [
                 'categories' => \App\GraphQL\Queries\Category\CategoryQuery::class,
             ],
             'mutation' => [
-                // ExampleMutation::class,
+                'createCategory' => \App\GraphQL\Mutations\Category\CreateCategoryMutation::class,
+                'updateCategory' => \App\GraphQL\Mutations\Category\UpdateCategoryMutation::class,
+                'deleteCategory' => \App\GraphQL\Mutations\Category\DeleteCategoryMutation::class,
             ],
             // The types only available in this schema
             'types' => [
